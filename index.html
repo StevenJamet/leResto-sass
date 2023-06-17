@@ -32,7 +32,7 @@
         </nav>
         <div>
             <h1>Welcome to<br><strong>the resto</strong></h1>
-            <div class="logo"></div>
+            <span class="logo"></span>
             <p>we serve only the freshest ingredients !</p>
         </div>
     </header>
@@ -40,7 +40,7 @@
         <section class="section1">
             <div class="left-part">
                 <h2>Discover<br><strong>our store</strong></h2>
-                <div class="logo"></div>
+                <span class="logo"></span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cupiditate at distinctio veniam quaerat molestias sint delectus cum ipsa accusantium in ea dolore libero est accusamus odit obcaecati, quisquam modi, ullam illo commodi odio ducimus doloremque suscipit. Distinctio harum a dolorem tempora. Adipisci, vel debitis iure quos molestiae pariatur tenetur?</p>
                 <img src="./assets/img/avatar-01.jpg" alt="Russell Stephens">
                 <h6>Russell stephens</h6>
@@ -50,7 +50,7 @@
         </section>
         <section class="menu">
             <h2>Discover</h2>
-            <div class="logo"></div>
+            <span class="logo"></span>
             <nav>
                 <ul>
                     <li>Breckfast</li>
@@ -111,10 +111,10 @@
                 </div>
             </div>
         </section>
-        <section class="section3">
-            <div class="left-part">
+        <section class="time-booking">
+            <div class="time-open-part">
                 <h3>Time open</h3>
-                <div class="logo"></div>
+                <span class="logo"></span>
                 <h4>monday - friday</h4>
                 <p>7AM - 11AM (Breckfast)<br>11AM - 10PM (Lunch/Dinner)</p>
 
@@ -122,26 +122,113 @@
                 <p>8AM - 1PM (Brunch)<br>1PM - 9PM (Lunch/Dinner)</p>
                 <p>+15 890 979 25 52</p>
             </div>
-            <div class="booking">
+            <div class="booking-part">
                 <h3>Reservation<br><strong>online booking</strong></h3>
                 <div class="logo"></div>
                 <form action="booking">
                     <label for="number_people">People</label>
-
-<select name="pets" id="pet-select">
-    <option value="">--Please choose an option--</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="5">6</option>
-</select>
+                    <select name="people" id="people">
+                        <option value="People">People</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <label for="start">Start date:</label>
+                    <input type="date" id="booking name="booking-start" value="2020-07-15" min="2018-01-01" max="2018-12-31">
+                   <label for="appt">Time to booking</label>
+                   <input type="time" id="time" name="hour booking" min="11:30" max="21:30" required>
+                   <label for="name">Name</label>
+                   <input type="text" id="name"
+                   placeholder="Name">
+                   <label for="number">Phone</label>
+                   <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone" required>
+                   <label for="mail">Email</label>
+                   <input type="email" id="mail" placeholder="Email">
+                   <input type="submit" value="book now">
                 </form>
+            </div>
+        </section>
+
+        <section class="events-content">
+            <h2>upcomin<br><strong>our event</strong></h2>
+            <span class="logo"></span>
+            <div class="envents-container">
+                <div class="left-part-events">
+                    <div class="event-1">
+                        <div class="img-01">
+                            <span>08 july</span>
+                        </div>
+                        <h4>Night Inspirescu Party</h4>
+                        <i class="fa-solid fa-location-dot"></i><p>Restaurant Resto</p>
+                        <i class="fa-regular fa-clock"></i><p>10:00pm - 6:00am</p>
+                        <button class="btn">Buy Tiquets</button>
+                    </div>
+                    <div class="event-2">
+                        <div class="img-02">
+                            <span>08 july</span>
+                        </div>
+                        <h4>DJ RobagRuhme</h4>
+                        <i class="fa-solid fa-location-dot"></i><p>Restaurant Resto</p>
+                         <i class="fa-regular fa-clock"></i><p>10:00pm - 6:00am</p>
+                         <button class="btn">Buy Tiquets</button>
+                    </div>
+                    <div class="right-part-events">
+                        <div class="event-3">
+                            <span class="date">08 july</span>
+                            <h4>Thousands celebrities at<br>Johnnie Night</h4>
+                            <i class="fa-solid fa-location-dot"></i><p>Restaurant Resto</p>
+                            <i class="fa-regular fa-clock"></i><p>10:00pm - 6:00am</p>
+                            <button class="btn">Buy Tiquets</button>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/img/avatar-02.jpg" alt="chief cook women">
+                <p><strong>"</strong> ipsum dolor sit, amet consectetur adipisicing elit. Amet, non error, optio repudiandae dolore, alias nam sapiente sequi inventore incidunt velit ipsum earum nobis delectus voluptates ex distinctio magni ipsa eaque laudantium quis. Saepe rem temporibus aut exercitationem nihil perferendis, dolore error ut cum dolorem tempora laborum distinctio facilis.<strong>"</strong></p>
+                <h4>Russel Stephens</h4>
+                <h5>CEO - Headpassion</h5>
+            </div>
+        </section>
+       
+        <section class="map">
+            <div class="img-map"></div>
+        </section>
+
+        <footer>
+            <div class="left-part">
+                <h2>le resto</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptas ad consectetur nihil exercitationem quibusdam, consequuntur suscipit, ab ducimus ullam numquam, quod voluptates! Error quia odio excepturi rerum fugiat natus.
+                </p>
+            </div>
+            <div class="right-part">
+                <h4>Newsletter</h4>
+                <input type="mail" id="mail" placeholder="Your email adress">
+                <h4>Follow us:</h4>
+                <nav class="social">
+                    <ul>
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-pinterest"></i></li>
+                    </ul>
+                </nav>
 
             </div>
+            
+        </footer>
 
-        </section>
+
+        
     </main>
 </body>
 </html>
