@@ -1,5 +1,5 @@
 body{
-    background: rgb(30, 30, 30);
+    background: rgb(60, 60, 60);
 }
 @font-face {
     font-family: "allura";
@@ -19,7 +19,7 @@ body{
     margin: 0;
     box-sizing: border-box;
     font-family: "roboto", sans-serif;
-    color: white;
+    color: rgb(188, 188, 188);
     font-size: 0.9rem;
     list-style: none;
 }
@@ -35,4 +35,7 @@ body{
 }
 img{
     border-radius: 100px
+}
+.logo{
+    background: url(/assets/img/favicon.png);
 }

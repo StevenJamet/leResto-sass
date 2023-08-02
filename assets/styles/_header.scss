@@ -1,0 +1,27 @@
+header{
+    margin-top: 15px;
+}
+.nav-container{
+    display: grid;
+    grid-template-columns: 7% 86% 7%;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: auto;
+    align-items: center;
+}
+.nav-container span{
+    font-family: "allura";
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.tab ul{
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: lighter;
+}
+.social ul{
+    display: flex;
+    justify-content: space-around;
+}

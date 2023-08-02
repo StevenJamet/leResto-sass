@@ -1,5 +1,37 @@
+header {
+  margin-top: 15px;
+}
+
+.nav-container {
+  display: grid;
+  grid-template-columns: 7% 86% 7%;
+  justify-content: space-around;
+  max-width: 80%;
+  margin: auto;
+  align-items: center;
+}
+
+.nav-container span {
+  font-family: "allura";
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.tab ul {
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: lighter;
+}
+
+.social ul {
+  display: flex;
+  justify-content: space-around;
+}
+
 body {
-  background: rgb(30, 30, 30);
+  background: rgb(60, 60, 60);
 }
 
 @font-face {
@@ -19,7 +51,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "roboto", sans-serif;
-  color: white;
+  color: rgb(188, 188, 188);
   font-size: 0.9rem;
   list-style: none;
 }
@@ -38,4 +70,8 @@ body {
 
 img {
   border-radius: 100px;
+}
+
+.logo {
+  background: url(/assets/img/favicon.png);
 }/*# sourceMappingURL=index.css.map */
