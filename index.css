@@ -2,8 +2,7 @@ header {
   background: url("/assets/img/bg-slider-06.jpg") bottom/cover;
   height: 700px;
 }
-
-.nav-container {
+header .nav-container {
   display: grid;
   grid-template-columns: 7% 86% 7%;
   -ms-flex-pack: distribute;
@@ -15,14 +14,12 @@ header {
           align-items: center;
   padding-top: 15px;
 }
-
-.nav-container span {
+header .nav-container span {
   font-family: "allura";
   font-size: 1.7rem;
   font-weight: bold;
 }
-
-.tab ul {
+header .nav-container .tab ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,16 +29,14 @@ header {
   font-size: 0.6rem;
   font-weight: lighter;
 }
-
-.social ul {
+header .nav-container .social ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-
-.presentation {
+header .presentation {
   margin: 110px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,30 +48,31 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 70px;
 }
-
-.presentation .tittle {
+header .presentation .tittle {
   text-transform: none;
   font-size: 2.5rem;
 }
-
-.presentation p {
+header .presentation h1 {
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+header .presentation h1 strong {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+header .presentation p {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-size: 0.9rem;
 }
-
-h1 {
-  font-family: "poppins", sans-serif;
-  text-transform: uppercase;
-  font-size: 3.5rem;
-  font-weight: 600;
-  letter-spacing: 0.5rem;
-}
-
-.presentation img {
+header .presentation img {
   width: 30px;
-  margin: 50px auto;
+  margin: 30px auto;
 }
 
 .section1 {
@@ -95,12 +91,31 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: white;
   border: 1px dashed var(--gold);
   margin: 15px;
+  padding: 30px 15px;
+}
+.section1 .left-part h2 {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+.section1 .left-part h2 strong {
+  font-size: 1.5rem;
+  color: var(--black);
 }
 .section1 .left-part p {
   color: var(--black);
+  text-align: center;
+}
+.section1 .right-part img {
+  width: 100%;
+  height: 450px;
+  border-radius: 0;
 }
 
 @font-face {
@@ -116,7 +131,7 @@ h1 {
   src: url(/assets/fonts/Roboto.ttf);
 }
 :root {
-  --gold: rgb(138, 92, 69);
+  --gold: rgb(174, 115, 86);
   --white: rgb(230, 230, 230);
   --black: rgb(60, 60, 60);
 }
