@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   background: url("/assets/img/bg-slider-06.jpg") bottom/cover;
   height: 700px;
@@ -75,6 +76,7 @@ header .presentation img {
   margin: 30px auto;
 }
 
+/*************section 1 presentation du chef Russel**************/
 .section1 {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -112,19 +114,35 @@ header .presentation img {
   color: var(--black);
   text-align: center;
 }
-.section1 .left-part img {
-  width: 70px;
-}
 .section1 .left-part h6 {
   color: var(--black);
   font-weight: bold;
   font-family: "poppins", sans-serif;
+  font-size: 1.1rem;
 }
-.section1 .left-part h6 p {
+.section1 .left-part .chef {
+  color: var(--grey);
   text-transform: uppercase;
+  font-size: 0.9rem;
 }
 .section1 .right-part {
   background: url(/assets/img/store-01.jpg) center/cover;
+}
+
+/**************section 2 présentation du menu ***************/
+.menu-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.menu-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.menu-container .card {
+  background: var(--white);
 }
 
 @font-face {
@@ -141,8 +159,9 @@ header .presentation img {
 }
 :root {
   --gold: rgb(174, 115, 86);
-  --white: rgb(230, 230, 230);
   --black: rgb(60, 60, 60);
+  --grey: rgb(175, 175, 175);
+  --white: rgb(230, 230, 230);
 }
 
 * {
@@ -174,4 +193,12 @@ body {
 
 img {
   border-radius: 100px;
+}
+
+.spoon {
+  width: 30px;
+}
+
+.photo {
+  width: 80px;
 }/*# sourceMappingURL=index.css.map */

@@ -13,8 +13,9 @@
 }
 :root{
     --gold : rgb(174, 115, 86);
-    --white : rgb(230, 230, 230);
     --black : rgb(60, 60, 60);
+    --grey : rgb(175, 175, 175);
+    --white : rgb(230, 230, 230);
 }
 
 *{
@@ -41,4 +42,10 @@ body{
 }
 img{
     border-radius: 100px
+}
+.spoon{
+    width: 30px;
+}
+.photo{
+    width: 80px;
 }

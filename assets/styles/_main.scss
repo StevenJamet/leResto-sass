@@ -1,3 +1,5 @@
+/*************section 1 presentation du chef Russel**************/
+
 .section1{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -26,20 +28,35 @@
             color: var(--black);
             text-align: center;
         }
-        img{
-            width: 70px;
-        }
+       
         h6{
             color: var(--black);
             font-weight: bold;
             font-family: "poppins", sans-serif;
-            p{
-                text-transform: uppercase;
-            }
+            font-size: 1.1rem;
+        }
+        .chef{
+            color: var(--grey);
+            text-transform: uppercase;
+            font-size: 0.9rem;
         }
         
     }
     .right-part{
         background: url(/assets/img/store-01.jpg) center/cover;
     }
+}
+/**************section 2 présentation du menu ***************/
+.menu-container{
+    max-width: 700px;
+    margin: 0 auto;
+    ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .card{
+        background: var(--white);
+
+    }
+
 }
