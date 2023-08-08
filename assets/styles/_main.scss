@@ -53,9 +53,40 @@
     ul{
         display: flex;
         justify-content: space-around;
+        margin-bottom: 20px;
+        li{
+            padding-bottom: 6px;
+            border-bottom: solid 1px var(--grey);
+        }
     }
     .card{
         background: var(--white);
+        display: grid;
+        grid-template-columns: 50% 50%;
+        .item{
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            img{
+                width: 70px;
+            }
+        }
+        .ingredients{
+            h4{
+                color: var(--black);
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            p{
+                color: var(--black);
+                font-size: 1.1rem;
+            }  
+        }
+        span{
+            color: var(--gold);
+        }
 
     }
 
