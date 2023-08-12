@@ -106,9 +106,24 @@ header .presentation img {
 }
 
 /**************section 2 présentation du menu ***************/
+.menu .tittle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 35px auto 35px;
+}
+.menu .tittle-container .tittle {
+  font-size: 2rem;
+  font-weight: 100;
+}
+.menu .tittle-container img {
+  margin: 20px auto;
+}
+
 .menu-container {
-  max-width: 700px;
+  max-width: 750px;
   margin: 0 auto;
+  position: relative;
 }
 .menu-container ul {
   display: flex;
@@ -123,16 +138,26 @@ header .presentation img {
   background: var(--white);
   display: grid;
   grid-template-columns: 50% 50%;
+  border-top: solid 4px var(--gold);
 }
 .menu-container .card .item {
   margin: 20px auto;
-  padding: 20px;
+  padding: 25px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: relative;
 }
 .menu-container .card .item img {
   width: 70px;
+}
+.menu-container .card .item::after {
+  content: "";
+  position: absolute;
+  width: 87%;
+  height: 1px;
+  border-bottom: dashed 1px var(--grey);
+  top: 120px;
 }
 .menu-container .card .ingredients h4 {
   color: var(--black);
