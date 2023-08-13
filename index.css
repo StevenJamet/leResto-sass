@@ -6,10 +6,13 @@ header {
 header .nav-container {
   display: grid;
   grid-template-columns: 7% 86% 7%;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   max-width: 68%;
   margin: auto;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 15px;
 }
 header .nav-container span {
@@ -18,21 +21,34 @@ header .nav-container span {
   font-weight: bold;
 }
 header .nav-container .tab ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   text-transform: uppercase;
   font-size: 0.6rem;
   font-weight: lighter;
 }
 header .nav-container .social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 header .presentation {
   margin: 110px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 70px;
 }
 header .presentation .tittle {
@@ -68,10 +84,18 @@ header .presentation img {
 }
 .section1 .left-part {
   height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background: white;
   border: 1px dashed var(--gold);
   margin: 15px;
@@ -106,11 +130,21 @@ header .presentation img {
 }
 
 /**************section 2 présentation du menu ***************/
+.menu {
+  padding: 35px 0;
+  position: relative;
+}
 .menu .tittle-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 35px auto 35px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .menu .tittle-container .tittle {
   font-size: 2rem;
@@ -120,14 +154,27 @@ header .presentation img {
   margin: 20px auto;
 }
 
+.menu::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 550px;
+  background: url(/assets/img/bg-menu-01.jpg) center/cover;
+  z-index: -1;
+  top: 300px;
+}
+
 .menu-container {
   max-width: 750px;
   margin: 0 auto;
   position: relative;
 }
 .menu-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-bottom: 20px;
 }
 .menu-container ul li {
@@ -143,9 +190,14 @@ header .presentation img {
 .menu-container .card .item {
   margin: 20px auto;
   padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   position: relative;
 }
 .menu-container .card .item img {
@@ -194,7 +246,8 @@ header .presentation img {
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "roboto", sans-serif;
   color: var(--white);
   font-size: 0.9rem;
