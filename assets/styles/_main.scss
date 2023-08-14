@@ -268,16 +268,59 @@
     .spoon{
         margin: 25px auto;
     }
-    .events-container{
+    .event-part{
         display: grid;
+        max-width: 800px;
         grid-template-areas: 
         "event-1 event-3"
         "event-2 event-3";
         .event-1{
             grid-area: event-1;
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: url(/assets/img/event-01.jpg) center/cover;
+                width: 140px;
+                height: 110px;
+                .date-container{
+                    background: var(--black);
+                    width: 50px;
+                    height: 50px;
+                    p{
+                        text-align: center;
+                        font-size: 0.7rem;
+                        strong{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
         }
-        .event2{
+        .event-2{
             grid-area: event-2;
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: url(/assets/img/event-02.jpg) center/cover;
+                width: 140px;
+                height: 110px;
+                .date-container{
+                    background: var(--black);
+                    width: 50px;
+                    height: 50px;
+                    p{
+                        text-align: center;
+                        font-size: 0.7rem;
+                        strong{
+                            font-size: 1.2rem;
+                        }
+                    }
+ 
+                }
+
+            }
         }
         .event3{
             grid-area: event-3;

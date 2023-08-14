@@ -386,17 +386,70 @@ header .presentation img {
 .events-content .spoon {
   margin: 25px auto;
 }
-.events-content .events-container {
+.events-content .event-part {
   display: grid;
+  max-width: 800px;
   grid-template-areas: "event-1 event-3" "event-2 event-3";
 }
-.events-content .events-container .event-1 {
+.events-content .event-part .event-1 {
   grid-area: event-1;
 }
-.events-content .events-container .event2 {
+.events-content .event-part .event-1 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(/assets/img/event-01.jpg) center/cover;
+  width: 140px;
+  height: 110px;
+}
+.events-content .event-part .event-1 div .date-container {
+  background: var(--black);
+  width: 50px;
+  height: 50px;
+}
+.events-content .event-part .event-1 div .date-container p {
+  text-align: center;
+  font-size: 0.7rem;
+}
+.events-content .event-part .event-1 div .date-container p strong {
+  font-size: 1.2rem;
+}
+.events-content .event-part .event-2 {
   grid-area: event-2;
 }
-.events-content .events-container .event3 {
+.events-content .event-part .event-2 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(/assets/img/event-02.jpg) center/cover;
+  width: 140px;
+  height: 110px;
+}
+.events-content .event-part .event-2 div .date-container {
+  background: var(--black);
+  width: 50px;
+  height: 50px;
+}
+.events-content .event-part .event-2 div .date-container p {
+  text-align: center;
+  font-size: 0.7rem;
+}
+.events-content .event-part .event-2 div .date-container p strong {
+  font-size: 1.2rem;
+}
+.events-content .event-part .event3 {
   grid-area: event-3;
 }
 
