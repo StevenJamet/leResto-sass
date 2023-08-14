@@ -132,6 +132,7 @@ header .presentation img {
 /**************section 2 présentation du menu ***************/
 .menu {
   padding: 35px 0;
+  margin-bottom: 85px;
   position: relative;
 }
 .menu .tittle-container {
@@ -224,6 +225,181 @@ header .presentation img {
   color: var(--gold);
 }
 
+/*********************** booking part *********************/
+.time-booking {
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px auto;
+}
+.time-booking .time-container {
+  background: rgb(37, 37, 37);
+  padding: 15px;
+}
+.time-booking .time-container .time-open-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  border: dashed 1px var(--white);
+  height: 100%;
+}
+.time-booking .time-container .time-open-part .tittle {
+  line-height: 1.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.time-booking .time-container .time-open-part h3 {
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+.time-booking .time-container .time-open-part h3 strong {
+  text-transform: uppercase;
+}
+.time-booking .time-container .time-open-part h4 {
+  text-transform: uppercase;
+  color: var(--gold);
+  font-size: 0.9rem;
+  margin: 20px auto 15px auto;
+}
+.time-booking .time-container .time-open-part p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.time-booking .time-container .time-open-part .number {
+  color: var(--gold);
+  font-weight: bold;
+  margin-top: 25px;
+  font-size: 0.9rem;
+}
+.time-booking .booking-part {
+  background: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 60px 70px 10px 70px;
+}
+.time-booking .booking-part .tittle {
+  line-height: 1.4rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.time-booking .booking-part .tittle strong {
+  color: black;
+  text-transform: uppercase;
+}
+.time-booking .booking-part img {
+  margin: 30px auto;
+}
+.time-booking .booking-part form {
+  display: grid;
+  gap: 15px;
+  grid-template-areas: "peo day hour" "name tel mail";
+}
+.time-booking .booking-part form #people {
+  grid-area: peo;
+}
+.time-booking .booking-part form #date {
+  grid-area: day;
+}
+.time-booking .booking-part form #time {
+  grid-area: hour;
+}
+.time-booking .booking-part form #name {
+  grid-area: name;
+}
+.time-booking .booking-part form #phone {
+  grid-area: tel;
+}
+.time-booking .booking-part form #mail {
+  grid-area: mail;
+}
+.time-booking .booking-part form input {
+  border: none;
+  border-bottom: solid 0.5px var(--black);
+  color: var(--black);
+  background: var(--white);
+  padding: 5px;
+}
+.time-booking .booking-part form select {
+  border: none;
+  border-bottom: solid 0.5px var(--black);
+  color: var(--black);
+  background: var(--white);
+  padding: 5px;
+}
+.time-booking .booking-part form .button {
+  background: black;
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: "poppins";
+  letter-spacing: 0.2rem;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  padding: 10px;
+  border-radius: 20px;
+  grid-column: 2/3;
+  grid-row: 4;
+}
+
+/************ Events part **********/
+.events-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.events-content .tittle {
+  line-height: 1.4rem;
+  text-align: center;
+}
+.events-content h2 {
+  font-size: 1.6rem;
+  font-weight: lighter;
+}
+.events-content h2 strong {
+  text-transform: uppercase;
+}
+.events-content .spoon {
+  margin: 25px auto;
+}
+.events-content .events-container {
+  display: grid;
+  grid-template-areas: "event-1 event-3" "event-2 event-3";
+}
+.events-content .events-container .event-1 {
+  grid-area: event-1;
+}
+.events-content .events-container .event2 {
+  grid-area: event-2;
+}
+.events-content .events-container .event3 {
+  grid-area: event-3;
+}
+
 @font-face {
   font-family: "allura";
   src: url(/assets/fonts/Allura.ttf);
@@ -240,7 +416,7 @@ header .presentation img {
   --gold: rgb(174, 115, 86);
   --black: rgb(60, 60, 60);
   --grey: rgb(175, 175, 175);
-  --white: rgb(230, 230, 230);
+  --white: rgb(250, 250, 250);
 }
 
 * {
@@ -275,7 +451,7 @@ img {
 }
 
 .spoon {
-  width: 30px;
+  width: 20px;
 }
 
 .photo {

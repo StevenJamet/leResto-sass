@@ -49,6 +49,7 @@
 /**************section 2 présentation du menu ***************/
 .menu{
     padding: 35px 0;
+    margin-bottom: 85px;
     position: relative;
     .tittle-container{
         display: flex;
@@ -71,7 +72,6 @@
     background: url(/assets/img/bg-menu-01.jpg) center/cover;
     z-index: -1;
     top: 300px;
-
 }
 .menu-container{
     max-width: 750px;
@@ -127,4 +127,160 @@
 
     }
 
+}
+/*********************** booking part *********************/
+
+.time-booking{
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: space-between;
+    margin: 20px auto;
+    .time-container{
+        background: rgb(37, 37, 37);
+        padding: 15px;
+        .time-open-part{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border: dashed 1px var(--white);
+            height: 100%;
+            .tittle{
+                line-height: 1.2rem;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            h3{
+                font-size: 1.8rem;
+                font-weight: lighter;
+                strong{
+                    text-transform: uppercase;
+                }
+            }
+            h4{
+                text-transform: uppercase;
+                color: var(--gold);
+                font-size: 0.9rem;
+                margin: 20px auto 15px auto;
+            }
+            p{
+                font-size: .8rem;
+                text-align: center;
+            }
+            .number{
+                color: var(--gold);
+                font-weight: bold;
+                margin-top: 25px;
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .booking-part{
+        background: var(--white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 70px 10px 70px;
+        .tittle{
+            line-height: 1.4rem;
+            text-align: center;
+            font-size: 1.8rem;
+            strong{
+                color: black;
+                text-transform: uppercase;
+            }
+        }
+        img{
+            margin: 30px auto;
+        }
+        form{
+            display: grid;
+            gap: 15px;
+            grid-template-areas: 
+            "peo day hour"
+            "name tel mail";
+            #people{
+                grid-area: peo;
+            }
+            #date{
+                grid-area: day;
+            }
+            #time{
+                grid-area: hour;
+            }
+            #name{
+                grid-area: name;
+            }
+            #phone{
+                grid-area: tel;
+            }
+            #mail{
+                grid-area: mail;
+            }
+            input{
+                border: none;
+                border-bottom: solid .5px var(--black);
+                color: var(--black);
+                background: var(--white);
+                padding: 5px;
+            }
+            select{
+                border: none;
+                border-bottom: solid .5px var(--black);
+                color: var(--black);
+                background: var(--white);
+                padding: 5px;
+            }
+            .button{
+                background: black;
+                color: var(--white);
+                text-transform: uppercase;
+                font-family: "poppins";
+                letter-spacing: 0.2rem;
+                font-weight: lighter;
+                font-size: 0.8rem;
+                padding: 10px;
+                border-radius: 20px;
+                grid-column: 2/3;
+                grid-row: 4;
+            }
+        }
+    }
+}
+
+/************ Events part **********/
+.events-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .tittle{
+        line-height: 1.4rem;
+        text-align: center;
+    }
+    h2{
+        font-size: 1.6rem;
+        font-weight: lighter;
+        strong{
+            text-transform: uppercase;
+        }
+    }
+    .spoon{
+        margin: 25px auto;
+    }
+    .events-container{
+        display: grid;
+        grid-template-areas: 
+        "event-1 event-3"
+        "event-2 event-3";
+        .event-1{
+            grid-area: event-1;
+        }
+        .event2{
+            grid-area: event-2;
+        }
+        .event3{
+            grid-area: event-3;
+        }
+    }
 }
