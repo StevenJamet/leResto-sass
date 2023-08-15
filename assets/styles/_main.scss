@@ -271,6 +271,7 @@
     .event-part{
         display: grid;
         max-width: 800px;
+        gap: 15px;
         grid-template-areas: 
         "event-1 event-3"
         "event-2 event-3";
@@ -322,8 +323,36 @@
 
             }
         }
-        .event3{
+        .event-3{
             grid-area: event-3;
+            
+            .img-03{
+                background: url(/assets/img/event-03.jpg)center/cover;
+                width: 220px;
+                height: 220px;
+                padding: 15px;
+                .white-container-3{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    background: var(--white);
+                    width: 100%;
+                    height: 100%;
+                    .date-container{
+                        background: var(--black);
+                        width: 50px;
+                        height: 50px;
+                        p{
+                            text-align: center;
+                            font-size: 0.7rem;
+                            strong{
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+            
         }
     }
 }
