@@ -255,86 +255,148 @@
     flex-direction: column;
     align-items: center;
     .tittle{
-        line-height: 1.4rem;
+        line-height: 1.6rem;
         text-align: center;
     }
     h2{
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         font-weight: lighter;
         strong{
             text-transform: uppercase;
+            font-size: 1.5rem;
         }
     }
     .spoon{
         margin: 25px auto;
     }
     .event-part{
-        display: grid;
-        max-width: 800px;
-        gap: 15px;
-        grid-template-areas: 
-        "event-1 event-3"
-        "event-2 event-3";
-        .event-1{
-            grid-area: event-1;
-            div{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background: url(/assets/img/event-01.jpg) center/cover;
-                width: 140px;
-                height: 110px;
-                .date-container{
-                    background: var(--black);
-                    width: 50px;
-                    height: 50px;
-                    p{
-                        text-align: center;
-                        font-size: 0.7rem;
-                        strong{
-                            font-size: 1.2rem;
-                        }
-                    }
+        width: 880px;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        .left-part{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .event-1{
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                .img-01{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: url(/assets/img/event-01.jpg) center/cover;
+                    width: auto;
+                    height: 135px;
                 }
-            }
-        }
-        .event-2{
-            grid-area: event-2;
-            div{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background: url(/assets/img/event-02.jpg) center/cover;
-                width: 140px;
-                height: 110px;
-                .date-container{
-                    background: var(--black);
-                    width: 50px;
-                    height: 50px;
-                    p{
-                        text-align: center;
-                        font-size: 0.7rem;
-                        strong{
-                            font-size: 1.2rem;
-                        }
-                    }
- 
-                }
-
-            }
-        }
-        .event-3{
-            grid-area: event-3;
-            
-            .img-03{
-                background: url(/assets/img/event-03.jpg)center/cover;
-                width: 220px;
-                height: 220px;
-                padding: 15px;
-                .white-container-3{
+                .white-container{
+                    background: var(--white);
                     display: flex;
                     flex-direction: column;
+                    align-items: flex-start;
+                    padding: 15px;
+                    gap: 1rem;
+                    h4{
+                        color: var(--black);
+                        font-size: 1.2rem;
+                    }
+                    p{
+                        letter-spacing: 0.1rem;
+                        color: var(--grey);
+                        i{
+                            color: var(--grey);
+                        }
+                    }
+                    button{
+                        border: none;
+                        background: none;
+                        color: var(--black);
+                        text-transform: uppercase;
+                        font-family: "poppins", sans-serif;
+                    }
+                }
+                .date-container{
+                    background: var(--black);
+                    width: 50px;
+                    height: 50px;
+                    padding: 7px;
+                    p{
+                        text-align: center;
+                        font-size: 0.7rem;
+                        strong{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+            .event-2{
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                .img-02{
+                    display: flex;
                     justify-content: center;
+                    align-items: center;
+                    background: url(/assets/img/event-02.jpg) center/cover;
+                    width: auto;
+                    height: 135px;
+                }
+                .white-container{
+                    background: var(--white);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 15px;
+                    gap: 1rem;
+                    h4{
+                        color: var(--black);
+                        font-size: 1.2rem;
+                    }
+                    p{
+                        letter-spacing: 0.1rem;
+                        color: var(--grey);
+                        i{
+                            color: var(--grey);
+                        }
+                    }
+                    button{
+                        border: none;
+                        background: none;
+                        color: var(--black);
+                        text-transform: uppercase;
+                        font-family: "poppins", sans-serif;
+                    }
+                }
+                .date-container{
+                    background: var(--black);
+                    width: 50px;
+                    height: 50px;
+                    padding: 7px;
+                    p{
+                        text-align: center;
+                        font-size: 0.7rem;
+                        strong{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+
+        }
+            
+        
+        .event-3{
+            .img-03{
+                background: url(/assets/img/event-03.jpg)center/cover;
+                width: auto;
+                height: 290px;
+                padding: 15px;
+                .white-container{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    gap: 1.5rem;
+                    padding: 0 15px;
+                    align-items: center;
                     background: var(--white);
                     width: 100%;
                     height: 100%;
@@ -342,13 +404,34 @@
                         background: var(--black);
                         width: 50px;
                         height: 50px;
+                        padding: 7px;
                         p{
                             text-align: center;
                             font-size: 0.7rem;
+                            color: var(--white);
                             strong{
                                 font-size: 1.2rem;
                             }
                         }
+                    }
+                    h4{
+                        color: var(--black);
+                        font-size: 1.2rem;
+                        text-align: center;
+                    }
+                    p{
+                        color: var(--grey);
+                        letter-spacing: 0.1rem;
+                        i{
+                            color: var(--grey);
+                        }
+                    }
+                    button{
+                        color: var(--black);
+                        border: none;
+                        background: none;
+                        text-transform: uppercase;
+                        font-family: "poppins", sans-serif;
                     }
                 }
             }
