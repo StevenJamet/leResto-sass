@@ -254,6 +254,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 880px;
+    margin: 0 auto;
     .tittle{
         line-height: 1.6rem;
         text-align: center;
@@ -273,12 +275,12 @@
         width: 880px;
         display: flex;
         justify-content: space-between;
-        align-items: stretch;
         .left-part{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             .event-1{
+                grid-area: event1;
                 display: grid;
                 grid-template-columns: 1fr 2fr;
                 .img-01{
@@ -286,8 +288,6 @@
                     justify-content: center;
                     align-items: center;
                     background: url(/assets/img/event-01.jpg) center/cover;
-                    width: auto;
-                    height: 135px;
                 }
                 .white-container{
                     background: var(--white);
@@ -330,6 +330,7 @@
                 }
             }
             .event-2{
+                grid-area: event2;
                 display: grid;
                 grid-template-columns: 1fr 2fr;
                 .img-02{
@@ -337,8 +338,6 @@
                     justify-content: center;
                     align-items: center;
                     background: url(/assets/img/event-02.jpg) center/cover;
-                    width: auto;
-                    height: 135px;
                 }
                 .white-container{
                     background: var(--white);
@@ -382,14 +381,10 @@
             }
 
         }
-            
-        
         .event-3{
             .img-03{
                 background: url(/assets/img/event-03.jpg)center/cover;
-                width: auto;
-                height: 290px;
-                padding: 15px;
+                padding: 20px;
                 .white-container{
                     display: flex;
                     flex-direction: column;
@@ -438,4 +433,56 @@
             
         }
     }
+}
+
+/*************** cook presentation ***************/
+
+.cook-presentation{
+    margin: 150px auto;
+    position: relative;
+    div{
+        margin: 0 auto;
+        padding: 50px;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 900px;
+        p{
+            color: var(--black);
+            text-align: center;
+            line-height: 1.5rem;
+            i{
+                color: var(--black);
+            }
+            
+        }
+        h4{
+            margin: 20px auto 10px;
+            color: var(--black);
+            font-size: 1.3rem;
+        }
+        h5{
+            color: var(--grey);
+        }
+    }
+}
+.cook-presentation::before{
+    content: "";
+    position: absolute;
+    background: url(/assets/img/avatar-02.jpg)center/cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    top: -25px;
+    left: 50%;
+}
+.cook-presentation::after{
+    content: "";
+    position:absolute;
+    background: url(/assets/img/gmap.jpg)center/cover;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    bottom: -200px ;
 }
