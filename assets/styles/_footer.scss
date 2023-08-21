@@ -1,0 +1,33 @@
+footer{
+    margin: 200px 0 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .left-part{
+        padding: 45px 45px 45px 200px;
+        h2{
+            font-family: "allura", sans-serif;
+            color: var(--gold);
+            font-size: 2.2rem;
+        }
+        p{
+            line-height: 1.5rem;
+        }
+    }
+    .right-part{
+        background: rgb(90, 90, 90);
+        padding: 45px;
+        h4{
+            text-transform: uppercase;
+            font-family: "poppins";
+            font-size: 1.2rem;
+        }
+        input{
+            background: none;
+            border: solid 1px var(--grey);
+            }
+        }
+        nav{
+            display: flex;
+        }
+    }
+}

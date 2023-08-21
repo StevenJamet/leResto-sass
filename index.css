@@ -709,4 +709,37 @@ img {
 
 .photo {
   width: 80px;
+}
+
+footer {
+  margin: 200px 0 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+footer .left-part {
+  padding: 45px 45px 45px 200px;
+}
+footer .left-part h2 {
+  font-family: "allura", sans-serif;
+  color: var(--gold);
+  font-size: 2.2rem;
+}
+footer .left-part p {
+  line-height: 1.5rem;
+}
+footer .right-part {
+  background: rgb(90, 90, 90);
+  padding: 45px;
+}
+footer .right-part h4 {
+  text-transform: uppercase;
+  font-family: "poppins";
+  font-size: 1.2rem;
+}
+footer .right-part input {
+  background: none;
+  border: solid 1px var(--grey);
+}
+footer .right-part input placeholder {
+  color: white;
 }/*# sourceMappingURL=index.css.map */
