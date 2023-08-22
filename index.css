@@ -6,13 +6,10 @@ header {
 header .nav-container {
   display: grid;
   grid-template-columns: 7% 86% 7%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   max-width: 68%;
   margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-top: 15px;
 }
 header .nav-container span {
@@ -21,34 +18,21 @@ header .nav-container span {
   font-weight: bold;
 }
 header .nav-container .tab ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   text-transform: uppercase;
   font-size: 0.6rem;
   font-weight: lighter;
 }
 header .nav-container .social ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 header .presentation {
   margin: 110px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding: 70px;
 }
 header .presentation .tittle {
@@ -84,18 +68,10 @@ header .presentation img {
 }
 .section1 .left-part {
   height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   background: white;
   border: 1px dashed var(--gold);
   margin: 15px;
@@ -136,16 +112,9 @@ header .presentation img {
   position: relative;
 }
 .menu .tittle-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .menu .tittle-container .tittle {
   font-size: 2rem;
@@ -171,11 +140,8 @@ header .presentation img {
   position: relative;
 }
 .menu-container ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   margin-bottom: 20px;
 }
 .menu-container ul li {
@@ -191,14 +157,9 @@ header .presentation img {
 .menu-container .card .item {
   margin: 20px auto;
   padding: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
   position: relative;
 }
 .menu-container .card .item img {
@@ -230,9 +191,7 @@ header .presentation img {
   max-width: 900px;
   display: grid;
   grid-template-columns: 30% 70%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 20px auto;
 }
 .time-booking .time-container {
@@ -240,16 +199,9 @@ header .presentation img {
   padding: 15px;
 }
 .time-booking .time-container .time-open-part {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
   border: dashed 1px var(--white);
   height: 100%;
@@ -284,16 +236,9 @@ header .presentation img {
 }
 .time-booking .booking-part {
   background: var(--white);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding: 60px 70px 10px 70px;
 }
 .time-booking .booking-part .tittle {
@@ -361,16 +306,9 @@ header .presentation img {
 
 /************ Events part **********/
 .events-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   max-width: 880px;
   margin: 0 auto;
 }
@@ -391,24 +329,13 @@ header .presentation img {
 }
 .events-content .event-part {
   width: 880px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .events-content .event-part .left-part {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .events-content .event-part .left-part .event-1 {
   grid-area: event1;
@@ -416,29 +343,16 @@ header .presentation img {
   grid-template-columns: 1fr 2fr;
 }
 .events-content .event-part .left-part .event-1 .img-01 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background: url(/assets/img/event-01.jpg) center/cover;
 }
 .events-content .event-part .left-part .event-1 .white-container {
   background: var(--white);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 15px;
   gap: 1rem;
 }
@@ -479,29 +393,16 @@ header .presentation img {
   grid-template-columns: 1fr 2fr;
 }
 .events-content .event-part .left-part .event-2 .img-02 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background: url(/assets/img/event-02.jpg) center/cover;
 }
 .events-content .event-part .left-part .event-2 .white-container {
   background: var(--white);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 15px;
   gap: 1rem;
 }
@@ -541,21 +442,12 @@ header .presentation img {
   padding: 20px;
 }
 .events-content .event-part .event-3 .img-03 .white-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
   gap: 1.5rem;
   padding: 0 15px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background: var(--white);
   width: 100%;
   height: 100%;
@@ -603,16 +495,9 @@ header .presentation img {
   margin: 0 auto;
   padding: 50px;
   background: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   max-width: 900px;
 }
 .cook-presentation div p {
@@ -675,8 +560,7 @@ header .presentation img {
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "roboto", sans-serif;
   color: var(--white);
   font-size: 0.9rem;
@@ -739,7 +623,21 @@ footer .right-part h4 {
 footer .right-part input {
   background: none;
   border: solid 1px var(--grey);
+  padding: 5px 30px 5px 5px;
+  margin-top: 10px;
 }
-footer .right-part input placeholder {
-  color: white;
+footer .right-part .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  max-width: 300px;
+}
+footer .right-part .social nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+footer .right-part .social nav ul i {
+  color: var(--grey);
 }/*# sourceMappingURL=index.css.map */

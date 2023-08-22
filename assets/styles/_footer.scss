@@ -24,10 +24,26 @@ footer{
         input{
             background: none;
             border: solid 1px var(--grey);
+            padding: 5px 30px 5px 5px;
+            margin-top: 10px;
             }
-        }
-        nav{
-            display: flex;
-        }
+            .social{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 30px;
+                max-width: 300px;
+                nav{
+                    ul{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 150px;
+                        i{
+                            color: var(--grey);
+                        }
+                    }
+                }
+            }
+        
     }
 }
