@@ -32,30 +32,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "roboto", sans-serif;
-    color: var(--white);
-    font-size: 0.9rem;
+}
+li{
     list-style: none;
 }
 body{
     background: var(--black);
-}
-.tittle{
-    font-family: "allura", sans-serif;
-    font-size: 1.5rem;
-    color: var(--gold);
-}
-.tittle strong{
-    font-family: "poppins", sans-serif;
-    font-size: 1.3rem;
-    font-weight: lighter;
-}
-img{
-    border-radius: 100px
-}
-.spoon{
-    width: 20px;
-}
-.photo{
-    width: 80px;
+    text-align: center;
+    font-family: "roboto", sans-serif;
 }

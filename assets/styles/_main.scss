@@ -3,131 +3,116 @@
 .section1{
     display: grid;
     grid-template-columns: 50% 50%;
-    background: white;
+    background: var(--white);
     
     .left-part{
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        background: white;
+        background: var(--white);
         border: 1px dashed var(--gold);
         margin: 15px;
         padding: 30px 15px;
         h2{
+            color: var(--gold);
+            font-family: "allura";
             font-size: 2rem;
-            text-align: center;
-            line-height: 1.5rem;
-            strong{
-                font-size: 1.5rem;
-                color: var(--black);
-            }
+            font-weight: 500;
         }
-        p{
+        h3{
+            margin-top: -12px;
+            font-family: "poppins";
             color: var(--black);
-            text-align: center;
         }
-       
-        h6{
-            color: var(--black);
-            font-weight: bold;
-            font-family: "poppins", sans-serif;
-            font-size: 1.1rem;
+        img{
+            margin: 26px;
         }
-        .chef{
+        img:nth-of-type(2){
+            height: 70px;
+            border-radius: 150px;
+            margin-bottom: 8px;
+        }
+        h4{
+            font-family: "poppins", serif;
+            font-weight: 100;
+        }
+        h5{
             color: var(--grey);
-            text-transform: uppercase;
-            font-size: 0.9rem;
+            font-size: 0.7rem;
         }
-        
     }
     .right-part{
         background: url(/assets/img/store-01.jpg) center/cover;
     }
 }
 /**************section 2 présentation du menu ***************/
-.menu{
-    padding: 35px 0;
-    margin-bottom: 85px;
+.section2{
+    color: var(--white);
+    padding-bottom: 100px;
     position: relative;
-    .tittle-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .tittle{
-            font-size: 2rem;
-            font-weight: 100;
-        }
-        img{
-            margin: 20px auto;
-        }
+
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 620px;
+        left: 50%;
+        background: url(/assets/img/bg-menu-01.jpg) center/cover;
+        z-index: -1;
+        bottom: -330px;
+        transform: translate(-50%,-50%);
     }
-}
-.menu::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 550px;
-    background: url(/assets/img/bg-menu-01.jpg) center/cover;
-    z-index: -1;
-    top: 300px;
-}
-.menu-container{
-    max-width: 750px;
-    margin: 0 auto;
-    position: relative;
+    h2{
+        color: var(--gold);
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 60px 0 30px;
+        font-family: "allura", cursive;
+    }
     ul{
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 20px;
+        @include alignChildren(space-around);
+        width: 50%;
+        margin: 30px auto;
+        min-width: 500px;
+
         li{
-            padding-bottom: 6px;
-            border-bottom: solid 1px var(--grey);
+            border-bottom: 1px solid var(--grey);
+            padding-bottom: 8px;
         }
     }
-    .card{
+    .meals{
         background: var(--white);
+        color: black;
+        width: 85%;
+        max-width: 800px;
+        margin: 0 auto;
+        border-top: 4px solid var(--gold);
         display: grid;
         grid-template-columns: 50% 50%;
-        border-top: solid 4px var(--gold);
-        .item{
-            margin: 20px auto;
-            padding: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            position: relative;
+        z-index: 1000;
+        position: relative;
+
+        .meal{
+            display: grid;
+            grid-template-columns: 25% 60% 25%;
+            border-bottom: 1px dashed var(--grey);
+            padding: 30px 0;
+            margin: 0 20px;
+
             img{
-                width: 70px;
+                border-radius: 50px;
+                object-fit: cover;
+                width: 100%;
+                align-self: center;
+            }
+            .meal-text{
+                text-align: left;
+                @include childCenter;
+                flex-direction: column;
+                margin: 0 10px;
+                height: 100%;
             }
         }
-        .item::after{
-            content: "";
-            position: absolute;
-            width: 87%;
-            height: 1px;
-            border-bottom: dashed 1px var(--grey);
-            top: 120px;
-        }
-        .ingredients{
-            h4{
-                color: var(--black);
-                text-transform: uppercase;
-                font-weight: bold;
-            }
-            p{
-                color: var(--black);
-                font-size: 1.1rem;
-            }  
-        }
-        span{
-            color: var(--gold);
-        }
-
     }
-
 }
+
 /*********************** booking part *********************/
 
 .time-booking{
