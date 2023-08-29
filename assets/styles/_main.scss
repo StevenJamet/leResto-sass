@@ -43,208 +43,143 @@
     }
 }
 /**************section 2 présentation du menu ***************/
-.section2{
+.section2 {
     color: var(--white);
     padding-bottom: 100px;
     position: relative;
-
-    &::after{
-        content: "";
-        position: absolute;
-        height: 620px;
-        width: 200%;
-        background: url(/assets/img/bg-menu-01.jpg);
-        left: 0;
-        bottom: -600px;
-        transform: translate(-50%, -50%);
+  
+    &:after {
+      content: "";
+      position: absolute;
+      height: 620px;
+      width: 100%;
+      background: url(/assets/img/bg-menu-01.jpg) center/cover;
+      left: 50%;
+      bottom: -330px;
+      transform: translate(-50%, -50%);
     }
-    h2{
-        color: var(--gold);
-        font-size: 2rem;
-        font-weight: 500;
-        padding: 60px 0 30px;
-        font-family: "allura", cursive;
+    h2 {
+      color: var(--gold);
+      font-size: 2rem;
+      font-family: "allura";
+      font-weight: 500;
+      padding: 60px 0 30px;
     }
-    ul{
-        @include alignChildren(space-around);
-        width: 50%;
-        margin: 30px auto;
-        min-width: 500px;
-
-        li{
-            border-bottom: 1px solid var(--grey);
-            padding-bottom: 8px;
-        }
+    ul {
+      @include alignChildren(space-around);
+      width: 50%;
+      margin: 30px auto;
+      min-width: 500px;
+  
+  
+      li {
+        border-bottom: 1px solid var(--grey);
+        padding-bottom: 8px;
+      }
     }
-    .meals{
-        background: var(--white);
-        color: black;
-        width: 85%;
-        max-width: 800px;
-        margin: 0 auto;
-        border-top: 4px solid var(--gold);
+    .meals {
+      background: var(--white);
+      color: var(--black);
+      width: 85%;
+      max-width: 800px;
+      margin: 0 auto;
+      border-top: 4px solid var(--gold);
+      padding: 15px 0;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      z-index: 1000;
+      position: relative;
+  
+  
+      .meal {
         display: grid;
-        grid-template-columns: 50% 50%;
-        z-index: 1000;
-        position: relative;
+        grid-template-columns: 25% 60% 15%;
+        border-bottom: 1px dashed var(--grey);
+        padding: 30px 0;
+        margin: 0 20px;
+  
+        img {
+          border-radius: 50px;
+          object-fit: cover;
+          width: 100%;
+          align-self: center;
+        }
+        .meal-text {
+          text-align: left;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          margin: 0 10px;
+          height: 100%;
+  
+          h3 {
+            text-transform: uppercase;
+            color: var(--black);
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+          }
+        }
+        > p {
+          color: var(--gold);
+          font-weight: 600;
+          font-size: 1.1rem;
+          display: grid;
+          height: 100%;
+          align-items: center;
+        }
+      }
+    }
+  }
+  
+/*********************** booking part *********************/
+.section3{
+    padding: 100px 15px 65px;
+    color: var(--white);
 
-        .meal{
-            display: grid;
-            grid-template-columns: 25% 60% 15%;
-            border-bottom: 1px dashed var(--grey);
-            padding: 30px 0;
-            margin: 0 20px;
+    .form-content{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        background: var(--white);
+        max-width: 1050px;
+        margin: 0 auto;
 
-            img{
-                border-radius: 50px;
-                object-fit: cover;
-                width: 100%;
-                align-self: center;
-            }
-            .meal-text{
-                text-align: left;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                margin: 0 10px;
-                height: 100%;
+        .hours{
+            padding: 24px;
+            background: black;
+
+            .hours-content{
+                border: 1px dashed var(--grey);
+                padding: 20px 0;
 
                 h3{
-                    text-transform: uppercase;
-                    color: var(--black);
-                    font-size: 0.8rem;
-                    font-weight: bold;
-                    margin-bottom: 5px;
+                    font-family: "allura", cursive;
+                    font-size: 2.5rem;
+                    font-weight: 100;
+                    color: var(--gold);
                 }
-            }
-            > p{
-                color: var(--gold);
-                font-weight: 600;
-                font-size: 1.1rem;
-                display: grid;
-                height: 100%;
-                align-items: center;
-            }
-        }
-    }
-}
 
-/*********************** booking part *********************/
-
-.time-booking{
-    max-width: 900px;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    justify-content: space-between;
-    margin: 20px auto;
-    .time-container{
-        background: rgb(37, 37, 37);
-        padding: 15px;
-        .time-open-part{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-            border: dashed 1px var(--white);
-            height: 100%;
-            .tittle{
-                line-height: 1.2rem;
-                text-align: center;
-                margin-bottom: 20px;
-            }
-            h3{
-                font-size: 1.8rem;
-                font-weight: lighter;
-                strong{
-                    text-transform: uppercase;
+                h4{
+                    font-family: "poppins", serif;
+                    margin-top: -16px;
+                    letter-spacing: 2px;
+                    font-size: 1.3rem;
                 }
-            }
-            h4{
-                text-transform: uppercase;
-                color: var(--gold);
-                font-size: 0.9rem;
-                margin: 20px auto 15px auto;
-            }
-            p{
-                font-size: .8rem;
-                text-align: center;
-            }
-            .number{
-                color: var(--gold);
-                font-weight: bold;
-                margin-top: 25px;
-                font-size: 0.9rem;
-            }
-        }
-    }
-    .booking-part{
-        background: var(--white);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 60px 70px 10px 70px;
-        .tittle{
-            line-height: 1.4rem;
-            text-align: center;
-            font-size: 1.8rem;
-            strong{
-                color: black;
-                text-transform: uppercase;
-            }
-        }
-        img{
-            margin: 30px auto;
-        }
-        form{
-            display: grid;
-            gap: 15px;
-            grid-template-areas: 
-            "peo day hour"
-            "name tel mail";
-            #people{
-                grid-area: peo;
-            }
-            #date{
-                grid-area: day;
-            }
-            #time{
-                grid-area: hour;
-            }
-            #name{
-                grid-area: name;
-            }
-            #phone{
-                grid-area: tel;
-            }
-            #mail{
-                grid-area: mail;
-            }
-            input{
-                border: none;
-                border-bottom: solid .5px var(--black);
-                color: var(--black);
-                background: var(--white);
-                padding: 5px;
-            }
-            select{
-                border: none;
-                border-bottom: solid .5px var(--black);
-                color: var(--black);
-                background: var(--white);
-                padding: 5px;
-            }
-            .button{
-                background: black;
-                color: var(--white);
-                text-transform: uppercase;
-                font-family: "poppins";
-                letter-spacing: 0.2rem;
-                font-weight: lighter;
-                font-size: 0.8rem;
-                padding: 10px;
-                border-radius: 20px;
-                grid-column: 2/3;
-                grid-row: 4;
+
+                img{
+                    margin-top: 25px;
+                }
+                h5{
+                    text-transform: uppercase;
+                    color: var(--gold);
+                    font-family: "poppins";
+                    font-weight: 100;
+                    font-size: 1.1rem;
+                    margin: 38px 0 12px;
+                }
+                p{
+                    font-size: 0.85rem;
+                }
             }
         }
     }

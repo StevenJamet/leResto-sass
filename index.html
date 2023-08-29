@@ -58,7 +58,7 @@
             <div class="right-part">
             </div>
         </section>
-        <section2 class="section2">
+        <section class="section2">
                 <h2>Discover</h2>
                 <img class="spoon" src="/assets/img/ic-plate.png" alt="spoon and fork">
                 <ul>
@@ -134,51 +134,53 @@
                         <p>$25</p>
                     </div>                   
                 </div>   
-        </section2>
-        <section class="time-booking">
-            <div class="time-container">
-                <div class="time-open-part"><h3 class="tittle">Time<br><strong>open</strong></h3>
-                    <img class="spoon" src="/assets/img/ic-plate.png" alt="spoon and fork">
-                    <h4>monday - friday</h4>
-                    <p>7AM - 11AM (Breckfast)<br>11AM - 10PM (Lunch/Dinner)</p>
-    
-                    <h4>Saturday / sunday</h4>
-                    <p>8AM - 1PM (Brunch)<br>1PM - 9PM (Lunch/Dinner)</p>
-                    <p class="number">+15 890 979 25 52</p></div>
-            </div>
-            <div class="booking-part">
-                <h3 class="tittle">Reservation<br><strong>online booking</strong></h3>
-                <img class="spoon" src="/assets/img/ic-plate.png" alt="spoon and fork">
-                <form action="booking">
-                    <label for="number_people">People</label>
-                    <select name="people" id="people">
-                        <option value="People">People</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                    </select>
-                    <label for="start">Start date:</label>
-                    <input type="date" id="date" booking-start" value="2020-07-15" min="2018-01-01" max="2018-12-31">
-                   <label for="appt">Time to booking</label>
-                   <input type="time" id="time" name="hour booking" min="11:30" max="21:30" required>
-                   <label for="name">Name</label>
-                   <input type="text" id="name"
-                   placeholder="Name">
-                   <label for="number">Phone</label>
-                   <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone" required>
-                   <label for="mail">Email</label>
-                   <input type="email" id="mail" placeholder="Email">
-                   <input class="button" type="submit" value="book now">
-                </form>
+        </section>
+        <section class="section3">
+            <div class="form-content">
+                <div class="hours">
+                    <div class="hours-content">
+                        <h3>Time</h3>
+                        <h4>OPEN</h4>
+                        <img class="spoon" src="/assets/img/ic-plate.png" alt="spoon and fork">
+                        <h5>monday - friday</h5>
+                        <p>7AM - 11AM (Breckfast)</p>
+                        <p>11AM - 10PM (Lunch/Dinner)</p>
+                        <h5>Saturday / sunday</h5>
+                        <p>8AM - 1PM (Brunch)</p>
+                        <p>1PM - 9PM (Lunch/Dinner)</p>
+                        <h5>+15 890 979 25 52</h5>
+                    </div>
+                </div>
+                <div class="form-infos">
+                    <div class="form-infos-containers">
+                        <h2>Reservation</h2>
+                        <h3>online booking</h3>
+                        <img class="spoon" src="/assets/img/ic-plate.png" alt="spoon and fork">
+                        <div class="form-inputs">
+                            <select name="people" id="people">
+                                <option value="People">People</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <input type="date" id="date" name="booking-date" value="2020-07-15" min="2018-01-01" max="2023-12-31">
+                            <input type="time" id="time-booking" name="booking-time" min="11:30" max="21:30">
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Phone">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <button>BOOK NOW</button>
+                    </div>
+                </div>
             </div>
         </section>
 
