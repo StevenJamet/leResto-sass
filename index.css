@@ -340,7 +340,7 @@ header .header-text div h6 {
   padding: 50px 20px 90px;
 }
 .section4 .event-container {
-  min-width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .section4 .event-container h2 {
@@ -365,49 +365,116 @@ header .header-text div h6 {
   grid-template-columns: 58% 42%;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "a b" "c b";
+  gap: 20px;
+}
+.section4 .event-container .event-grid .date-content {
+  background: var(--black);
+  height: 86px;
+  width: 86px;
+  margin: 0 auto;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 22px;
+}
+.section4 .event-container .event-grid .date-content h6 {
+  font-size: 1.7rem;
+}
+.section4 .event-container .event-grid .address {
+  background: var(--white);
+}
+.section4 .event-container .event-grid .address h3 {
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-left: 8px;
+}
+.section4 .event-container .event-grid .address p {
+  font-size: 0.9rem;
+  color: var(--grey);
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+.section4 .event-container .event-grid .address p i {
+  margin-right: 3px;
+  font-size: 0.7rem;
+  transform: translateY(-2px);
+}
+.section4 .event-container .event-grid .address p i:nth-child(2) {
+  margin-left: 10px;
+}
+.section4 .event-container .event-grid .address h5 {
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+.section4 .event-container .event-grid .event-left {
+  display: grid;
+  grid-template-columns: 39% 61%;
+  text-align: left;
+}
+.section4 .event-container .event-grid .event-left .date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section4 .event-container .event-grid .event-left .address {
+  color: var(--black);
+  padding: 30px 20px;
 }
 .section4 .event-container .event-grid .event-1 {
   grid-area: a;
 }
+.section4 .event-container .event-grid .event-1 .date {
+  background: url(/assets/img/event-01.jpg) center/cover;
+}
 .section4 .event-container .event-grid .event-2 {
   grid-area: c;
 }
+.section4 .event-container .event-grid .event-2 .date {
+  background: url(/assets/img/event-02.jpg) center/cover;
+}
 .section4 .event-container .event-grid .event-3 {
   grid-area: b;
+  background: url(/assets/img/event-03.jpg) center/cover;
+  padding: 25px;
+}
+.section4 .event-container .event-grid .event-3 .address {
+  height: 100%;
+  padding: 0 12px;
+}
+.section4 .event-container .event-grid .event-3 .address h3 {
+  margin: 40px 0 15px;
+}
+.section4 .event-container .event-grid .event-3 .address h5 {
+  padding: 45px;
 }
 
 /*************** cook presentation ***************/
-.cook-presentation {
-  margin: 150px auto;
+.section5 {
+  padding: 70px 0 230px;
   position: relative;
 }
-.cook-presentation div {
+.section5::after {
+  content: "";
+  position: absolute;
+  background: url(/assets/img/gmap.jpg) center/cover;
+  width: 100%;
+  height: 350px;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+}
+.section5 .quote-container {
   margin: 0 auto;
-  padding: 50px;
+  padding: 65px 70px;
   background: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   max-width: 900px;
+  box-shadow: 0 0 3px #333;
+  position: relative;
 }
-.cook-presentation div p {
-  color: var(--black);
-  text-align: center;
-  line-height: 1.5rem;
-}
-.cook-presentation div p i {
-  color: var(--black);
-}
-.cook-presentation div h4 {
-  margin: 20px auto 10px;
-  color: var(--black);
-  font-size: 1.3rem;
-}
-.cook-presentation div h5 {
-  color: var(--grey);
-}
-
-.cook-presentation::before {
+.section5 .quote-container::before {
   content: "";
   position: absolute;
   background: url(/assets/img/avatar-02.jpg) center/cover;
@@ -416,16 +483,26 @@ header .header-text div h6 {
   border-radius: 50px;
   top: -25px;
   left: 50%;
+  transform: translateX(-50%);
 }
-
-.cook-presentation::after {
-  content: "";
-  position: absolute;
-  background: url(/assets/img/gmap.jpg) center/cover;
-  width: 100%;
-  height: 300px;
-  z-index: -1;
-  bottom: -200px;
+.section5 .quote-container .text-container {
+  line-height: 30px;
+}
+.section5 .quote-container .text-container::before {
+  content: "❝";
+}
+.section5 .quote-container .text-container::after {
+  content: "❞";
+}
+.section5 .quote-container .text-container::before, .section5 .quote-container .text-container::after {
+  font-size: 1.5rem;
+}
+.section5 h2 {
+  margin: 30px 0 15px;
+  font-weight: 100;
+}
+.section5 p {
+  color: var(--grey);
 }
 
 footer {
