@@ -4,6 +4,10 @@
     display: grid;
     grid-template-columns: 50% 50%;
     background: var(--white);
+
+    @media screen and (max-width: 680px) {
+        grid-template-columns: 1fr;
+    }
     
     .left-part{
         background: var(--white);
@@ -40,6 +44,10 @@
     }
     .right-part{
         background: url(/assets/img/store-01.jpg) center/cover;
+        
+        @media screen and (max-width: 680px) {
+            display: none;
+        }
     }
 }
 /**************section 2 présentation du menu ***************/
@@ -64,13 +72,19 @@
       font-family: "allura";
       font-weight: 500;
       padding: 60px 0 30px;
+
     }
     ul {
-      @include alignChildren(space-around);
-      width: 50%;
-      margin: 30px auto;
-      min-width: 500px;
-  
+        @include alignChildren(space-around);
+        width: 50%;
+        margin: 30px auto;
+        min-width: 500px;
+        
+        @media screen and (max-width: 680px) {
+          min-width: 200px;
+          width: 90%;
+          font-size: 0.65rem;
+      }
   
       li {
         border-bottom: 1px solid var(--grey);
@@ -89,6 +103,10 @@
       grid-template-columns: 50% 50%;
       z-index: 1000;
       position: relative;
+
+      @media screen and (max-width: 680px) {
+        grid-template-columns: 1fr;
+    }
   
   
       .meal {
@@ -143,6 +161,10 @@
         background: var(--white);
         max-width: 1050px;
         margin: 0 auto;
+
+        @media screen and (max-width: 850px) {
+            grid-template-columns: 1fr;
+        }
 
         .hours{
             padding: 24px;
@@ -205,6 +227,10 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 margin-bottom: 30px;
+
+                @media screen and (max-width: 680px) {
+                    grid-template-columns: 1fr;
+                }
                 
                 >*{
                     padding: 10px 0;
@@ -238,6 +264,10 @@
 /************ Events part **********/
 .section4{
     padding: 50px 20px 90px;
+
+    @media screen and (max-width: 680px) {
+        display: none;
+    }
 
     .event-container{
         max-width: 1000px;

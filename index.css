@@ -47,6 +47,11 @@ header .nav-container {
   margin: 0 auto;
   align-items: center;
 }
+@media screen and (max-width: 680px) {
+  header .nav-container {
+    grid-template-columns: 50% 10% 40%;
+  }
+}
 header .nav-container .logo {
   font-family: "allura";
   font-size: 2rem;
@@ -57,9 +62,15 @@ header .nav-container .tab ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  align-items: center;
   text-transform: uppercase;
   font-size: 0.7rem;
   padding: 0 30px;
+}
+@media screen and (max-width: 680px) {
+  header .nav-container .tab ul {
+    display: none;
+  }
 }
 header .nav-container .tab ul li {
   cursor: pointer;
@@ -68,6 +79,7 @@ header .nav-container .social ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  align-items: center;
   font-size: 0.8rem;
 }
 header .nav-container .social ul i {
@@ -99,6 +111,12 @@ header .header-text div h1 {
   margin-top: -28px;
   font-family: "poppins";
 }
+@media screen and (max-width: 680px) {
+  header .header-text div h1 {
+    font-size: 2rem;
+    margin-top: -15px;
+  }
+}
 header .header-text div img {
   height: 27px;
   margin: 32px 0;
@@ -114,6 +132,11 @@ header .header-text div h6 {
   display: grid;
   grid-template-columns: 50% 50%;
   background: var(--white);
+}
+@media screen and (max-width: 680px) {
+  .section1 {
+    grid-template-columns: 1fr;
+  }
 }
 .section1 .left-part {
   background: var(--white);
@@ -151,6 +174,11 @@ header .header-text div h6 {
 .section1 .right-part {
   background: url(/assets/img/store-01.jpg) center/cover;
 }
+@media screen and (max-width: 680px) {
+  .section1 .right-part {
+    display: none;
+  }
+}
 
 /**************section 2 présentation du menu ***************/
 .section2 {
@@ -179,9 +207,17 @@ header .header-text div h6 {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  align-items: center;
   width: 50%;
   margin: 30px auto;
   min-width: 500px;
+}
+@media screen and (max-width: 680px) {
+  .section2 ul {
+    min-width: 200px;
+    width: 90%;
+    font-size: 0.65rem;
+  }
 }
 .section2 ul li {
   border-bottom: 1px solid var(--grey);
@@ -199,6 +235,11 @@ header .header-text div h6 {
   grid-template-columns: 50% 50%;
   z-index: 1000;
   position: relative;
+}
+@media screen and (max-width: 680px) {
+  .section2 .meals {
+    grid-template-columns: 1fr;
+  }
 }
 .section2 .meals .meal {
   display: grid;
@@ -249,6 +290,11 @@ header .header-text div h6 {
   background: var(--white);
   max-width: 1050px;
   margin: 0 auto;
+}
+@media screen and (max-width: 850px) {
+  .section3 .form-content {
+    grid-template-columns: 1fr;
+  }
 }
 .section3 .form-content .hours {
   padding: 24px;
@@ -311,6 +357,11 @@ header .header-text div h6 {
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 680px) {
+  .section3 .form-content .form-infos .form-inputs {
+    grid-template-columns: 1fr;
+  }
+}
 .section3 .form-content .form-infos .form-inputs > * {
   padding: 10px 0;
   margin: 10px;
@@ -338,6 +389,11 @@ header .header-text div h6 {
 /************ Events part **********/
 .section4 {
   padding: 50px 20px 90px;
+}
+@media screen and (max-width: 680px) {
+  .section4 {
+    display: none;
+  }
 }
 .section4 .event-container {
   max-width: 1000px;
@@ -506,48 +562,96 @@ header .header-text div h6 {
 }
 
 footer {
-  margin: 200px 0 0;
+  background: url(/assets/img/bg-footer.jpg) center/cover;
+  text-align: left;
+  padding: 65px 32px;
+  color: var(--white);
+}
+@media screen and (max-width: 680px) {
+  footer {
+    background: none;
+  }
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 50% 50%;
 }
-footer .left-part {
-  padding: 45px 45px 45px 200px;
+@media screen and (max-width: 680px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
 }
-footer .left-part h2 {
-  font-family: "allura", sans-serif;
+.footer-content .left-part {
+  padding-right: 30px;
+  line-height: 30px;
+}
+@media screen and (max-width: 680px) {
+  .footer-content .left-part {
+    display: none;
+  }
+}
+.footer-content .left-part h2 {
+  font-family: allura;
+  font-size: 2.5rem;
+  font-weight: 100;
   color: var(--gold);
-  font-size: 2.2rem;
+  margin-bottom: 15px;
 }
-footer .left-part p {
-  line-height: 1.5rem;
-}
-footer .right-part {
-  background: rgb(90, 90, 90);
-  padding: 45px;
-}
-footer .right-part h4 {
-  text-transform: uppercase;
-  font-family: "poppins";
-  font-size: 1.2rem;
-}
-footer .right-part input {
-  background: none;
-  border: solid 1px var(--grey);
-  padding: 5px 30px 5px 5px;
-  margin-top: 10px;
-}
-footer .right-part .social {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 30px;
-  max-width: 300px;
-}
-footer .right-part .social nav ul {
-  display: flex;
-  justify-content: space-between;
-  width: 150px;
-}
-footer .right-part .social nav ul i {
+.footer-content .left-part p {
+  font-size: 0.8rem;
   color: var(--grey);
+}
+.footer-content .right-part {
+  padding-left: 50px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+@media screen and (max-width: 680px) {
+  .footer-content .right-part {
+    padding-left: 20px;
+  }
+}
+.footer-content .right-part h3 {
+  font-size: 0.85rem;
+}
+.footer-content .right-part input {
+  margin-top: 15px;
+  background: none;
+  border: 1px solid rgba(166, 114, 68, 0.151);
+  padding: 7px 13px;
+  width: 250;
+}
+@media screen and (max-width: 680px) {
+  .footer-content .right-part input {
+    width: 150px;
+  }
+}
+.footer-content .right-part .social {
+  display: flex;
+  margin-top: 50px;
+}
+@media screen and (max-width: 680px) {
+  .footer-content .right-part .social h3 {
+    display: none;
+  }
+}
+.footer-content .right-part .social ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #595956;
+  font-size: 0.8rem;
+  width: 200px;
+  cursor: pointer;
+}
+.footer-content .right-part .social ul i {
+  transition: 0.2s;
+}
+.footer-content .right-part .social ul i:hover {
+  transform: scale(1.5);
 }/*# sourceMappingURL=index.css.map */
